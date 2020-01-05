@@ -28,7 +28,7 @@ export default ({ data }) => {
         <Layout>
             <div>
                 <Title>Thoughts by Yihua</Title>
-                <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+                <h4>{data.allMarkdownRemark.totalCount} Posts test</h4>
                 {data.allMarkdownRemark.edges.map(({ node }) => (
                     <BlogBody key={node.id}>
                         <BlogLink to={node.fields.slug}>
